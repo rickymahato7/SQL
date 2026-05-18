@@ -61,14 +61,6 @@ AND city LIKE '%City'
 AND status = 'acquired' 
 GROUP BY city;
 
-;
-SELECT city, COUNT(name) num_acquired_co 
-FROM tutorial.crunchbase_companies
-WHERE founded_year BETWEEN 1980 AND 2005
-AND city LIKE '%City' 
-AND status = 'acquired' 
-GROUP BY city 
-
 /* 9. Find the number of ‘hardware’ companies founded outside ‘USA’ and did not take any funding.
 Return the country code and number of hardware companies in descending order */
 SELECT country_code, COUNT(name) num_co
